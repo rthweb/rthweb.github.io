@@ -1,0 +1,81 @@
+/* FONTS */
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600italic,400);
+
+body {
+	padding-top: 70px;
+
+}
+
+#main-txt {
+	font-family: 'Slabo 27px', serif;
+	font-size: 90px;
+	line-height: 90%;
+}
+
+.sub {
+	width: 65%;
+	float: none;
+	margin: 0 auto;
+}
+
+#subtext {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-style: italic;
+}
+
+#subtext1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	margin-bottom: 50px;
+}
+
+
+.service-box p {
+    margin-bottom: 0;
+}
+
+.portfolio-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.panel {
+	padding: 20px;
+}
+
+.panel:hover{
+	background-color: lightgray;
+	transition: all 0.5s ease 0s;
+}
+
+.undtext {
+	padding-bottom: 5px;
+}
+
+i {
+	font-size: 25px;
+}
+
+/* taken from http://codepen.io/ibrahimjabbari/pen/ozinB style17*/
+hr {
+	border-top: 1px solid #8c8b8b;
+	text-align: center;
+}
+hr:after {
+	content: '§';
+	display: inline-block;
+	position: relative;
+	top: -14px;
+	padding: 0 10px;
+	background: white; /* >>> match to colour of background! <<< */
+	color: #8c8b8b;
+	font-size: 18px;
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
+
