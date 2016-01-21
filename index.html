@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
-        <script src="js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -54,10 +54,10 @@
                 <div class="col-lg-3 col-md-6 text-center">
 
                     <div class="service-box panel panel-default">
-                        <i class="fa fa-4x fa-file-code-o wow bounceIn text-primary"></i>
+                        <a href="#portf" data-toggle="collapse"><i class="fa fa-4x fa-file-code-o wow bounceIn text-primary"></i></a>
                         <h3>Portfolio</h3>
                         <p class="text-muted undtext">Click the icon below to see my portfolio of websites.</p>
-                        <a href="#portf" data-toggle="collapse"><i class="glyphicon glyphicon-menu-down"></i></a>
+
 
                         <div id="portf" class="collapse">
                             <p>Currently I do not have a portfolio worthy to show, but hopefully judging by this website you will consider contacting me! </p>
@@ -68,11 +68,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box panel panel-default">
-                        <i class="fa fa-4x fa-shield wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <a href="#serv" data-toggle="collapse"><i class="fa fa-4x fa-shield wow bounceIn text-primary" data-wow-delay=".1s"></i></a>
                         <h3>Services</h3>
-                        <p class="text-muted undtext">Click the icon below to see the services that I offer</p>
-                        <a href="#serv" data-toggle="collapse"><i class="glyphicon glyphicon-menu-down"></i></a>
-
+                        <p class="text-muted undtext">Click the icon above to see the services that I offer</p>
+                        
                         <div id="serv" class="collapse">
                             <p>
                                 Beautifully designed one page websites; <br>
@@ -83,47 +82,59 @@
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box panel panel-default">
-                        <i class="fa fa-4x fa-envelope-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <a href="mailto:harper.ryan196@gmail.com"><i class="fa fa-4x fa-envelope-o wow bounceIn text-primary" data-wow-delay=".2s"></i></a>
                         <h3>Email Me</h3>
-                        <p class="text-muted undtext">Click on the icon below to email me.</p>
-                        <a href="#emailm" data-toggle="collapse"><i class="glyphicon glyphicon-menu-down"></i></a>
+                        <p class="text-muted undtext">Click on the icon above to email me.</p>
 
-                        <div id="emailm" class="collapse">
-                            <p>
-                                <a href="mailto:harper.ryan196@gmail.com">Email Me</a>
-                            </p>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box panel panel-default">
-                        <i class="fa fa-4x fa-file-text-o wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <a href="#modalForm" data-toggle="modal" role="button"><i class="fa fa-4x fa-file-text-o wow bounceIn text-primary" data-wow-delay=".3s"></i></a>
                         <h3>Contact Form</h3>
                         <p class="text-muted undtext">Click below to bring up the contact form.</p>
-                        <a href="#" data-toggle="modal" data-target="#cform"><i class="glyphicon glyphicon-menu-down"></i></a>
 
-                        <div class="modal fade" tabindex="-1" role="dialog" id="cform" aria-labelledby="cformlabel">
-                            <div class="modal-dialog" role="document">
+                        <div id="modalForm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+                            <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                         <h4>Contact Form</h4>
-                                    </div>
-
+                                    </div> 
                                     <div class="modal-body">
-                                        <form id="contactform" action="https://formspree.io/harper.ryan196@gmail.com" method="POST">
-                                            <input type="text" name="name" placeholder="Your name">
-                                            <input type="email" name="_replyto" placeholder="Your email">
-                                            <textarea name="message" placeholder="Your message"></textarea>
-                                            <input type="submit" value="Send">
-                                        </form
->gos                                        
-                                    </div>
 
-                                </div>                                
+                                        <form class="form-horizontal" name="commentform" method="POST" action="//formspree.io/harper.ryan196@gmail.com">
+                                            <div class="form-group">
+                                                <label class="control-label col-md-4" for="name">Name</label>
+                                                <div class="col-md-6">
+                                                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-4" for="email">Email Address</label>
+                                                <div class="col-md-6 control-label">
+                                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-4" for="comment">Question or Comment</label>
+                                                <div class="col-md-6">
+                                                    <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-6">
+                                                    <button type="submit" value="Submit" class="btn btn-custom pull-right">Send</button>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
                             </div>
+                            
                         </div>
-                        
+
 
                     </div>
                 </div>

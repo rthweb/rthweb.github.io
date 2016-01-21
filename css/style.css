@@ -79,3 +79,6 @@ hr:after {
 	transform: rotate(60deg);
 }
 
+.hidcont {
+	display: none;
+}
