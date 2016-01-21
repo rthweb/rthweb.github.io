@@ -61,11 +61,11 @@ i {
 }
 
 /* taken from http://codepen.io/ibrahimjabbari/pen/ozinB style17*/
-hr {
+#mainhr {
 	border-top: 1px solid #8c8b8b;
 	text-align: center;
 }
-hr:after {
+#mainhr:after {
 	content: '§';
 	display: inline-block;
 	position: relative;
@@ -77,6 +77,13 @@ hr:after {
 	-webkit-transform: rotate(60deg);
 	-moz-transform: rotate(60deg);
 	transform: rotate(60deg);
+}
+
+#panelhr {
+	border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
 .hidcont {
